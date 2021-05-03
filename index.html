@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/19faedb160.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+
+
+</head>
+
+<body>
+
+    <div class="resetGameAera">
+
+
+        <div class="resetDialog">
+            <button class="hayırBtn"><i class="fas fa-times"></i></button>
+            <i class="fas fa-exclamation-triangle"></i>
+            <p>Oyunu sıfırlamak istediğinden emin misin ?</p>
+            <span><strong><i>(Tüm verileninz silinir.)</i></strong></span>
+            <div class="btnMain d-flex justify-content-center align-items-center">
+                <button class=" evetBtn d-flex justify-content-center align-items-center">sıfırla<i
+                        class="fas fa-shoe-prints"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="teamChooser row " id="teamUniformChooser">
+
+        <div class="formaSlider col-7 ">
+
+            <div class="bodyforma">
+                <div class="uniformarea">
+                    <div class="body">
+                    </div>
+                    <div class="yaka"></div>
+                    <div class="kol1 kol"></div>
+                    <div class="kol2 kol"></div>
+
+                    <!-- <div class="cizgilibody">
+                        <div class=" cizgilicizgi"></div>
+                        <div class=" cizgilicizgi"></div>
+                        <div class=" cizgilicizgi"></div>
+                        <div class=" cizgilicizgi"></div>
+                        <div class=" cizgilicizgi"></div>
+                    </div>
+                    <div class="yaka"></div>
+                    <div class="kol1 cizgilikol">
+                        <div class="kolvr cizgilikolvr"></div>
+                    </div>
+                    <div class="kol2 cizgilikol">
+                        <div class="kolvr  cizgilikolvr"></div>
+                    </div> -->
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="choosingMain col-5 d-flex justify-content-center align-items-center flex-column">
+
+            <div class=" secondchoose d-flex justify-content-around align-items-center flex-column ">
+                <div class="chooseDesen row text-center  d-flex  justify-content-center  w-100 mt-5">
+                    <h4 class="col-12 text-center">shirt pattern</h4>
+                    <div class="col-12 formapaint d-flex justify-content-center">
+                        <div class="hover14">
+                            <button id="duzbutton">
+                                <img src="assets/uniformimages/duz.png" alt="">
+
+                            </button>
+                        </div>
+                        <div class="hover14"><button id="cizgilibutton"><img src="assets/uniformimages/cizgili.png"
+                                    alt=""></button></div>
+                        <div class="hover14"><button id="sikcizgilibutton"><img
+                                    src="assets/uniformimages/sıkcizgili.png" alt=""></button></div>
+                        <div class="hover14"><button id="tekcizgilibutton"><img src="assets/uniformimages/tekcizgi.png"
+                                    alt=""></button></div>
+                    </div>
+
+
+
+
+                </div>
+
+
+                <div class="chooseColor  row  w-100">
+                    <div class="firstcolor col-6 text-center">
+                        <h4>Primary </h4>
+                        <input type="color" id="fcolor" class="colorpicker">
+
+                    </div>
+                    <div class="secondcolor col-6 text-center">
+                        <h4>Secondary </h4>
+                        <input type="color" id="scolor" value="#ffffff" class="colorpicker">
+                    </div>
+                </div>
+
+                <div class=" reset-logo d-flex justify-content-end">
+                    <div class="reset d-flex justify-content-center align-items-center">
+                        <button id="resetforma" class="d-flex justify-content-center align-items-center">
+                            <span id="resetid"><span>Reset</span><i class="fas fa-trash-alt ml-2"
+                                    style="font-size: 25px;"></i></span>
+                        </button>
+                    </div>
+                    <div class="logoSec d-flex justify-content-center align-items-center">
+                        <button id="logosecid" class="d-flex justify-content-center align-items-center"><span>Choose
+                                Logo<span><i class="fas fa-chevron-circle-right ml-2"
+                                        style="font-size: 25px;"></i></span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+    <div class="teamChooser row  justify-content-center flex-row " id="teamlogoChooser">
+
+
+        <div class="logoMainArea   col-7 d-flex justify-content-center align-items-center">
+            <div id="logoContainer">
+                <div class="circle">
+                    <div class="circleinner">
+                        <div class="logoimg">
+                            <img src="../../assets/logoimages/horse.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="logochoosingarea   col-5 d-flex justify-content-around flex-column">
+
+            <div>
+                <h4>Logo Style</h4>
+                <div class="d-flex justify-content-around">
+                    <button id="circlelogoButton"><img id="circlelogoamblem" src="assets/logopainted/circle.png" alt="" class="logoimgminified"></button>
+                    <button id="elipslogoButton"><img  id="elipslogoamblem" src="assets/logopainted/elips.png" alt="" class="logoimgminified"></button>
+                    <button id="concavelogoButton"><img  id="concavelogoamblem" src="assets/logopainted/concave.png" alt="" class="logoimgminified"></button>
+                    <button id="lastlogoButton"><img  id="lastlogoamblem" src="assets/logopainted/45square.png" alt="" class="logoimgminified"></button>
+                </div>
+            </div>
+
+
+
+
+
+            <div>
+                <h4>Emblem Style</h4>
+                <div class="amblemSelectArea d-flex justify-content-around flex-row">
+                    <div><img src="assets/logoimages/eagle.png" class="logoimg" alt=""></div>
+                    <div><img src="assets/logoimages/horse.png" class="logoimg" alt=""></div>
+                    <div><img src="assets/logoimages/lion.png" class="logoimg" alt=""></div>
+                    <div><img src="assets/logoimages/shark.png" class="logoimg" alt=""></div>
+                    <div><img src="assets/logoimages/tiger.png" class="logoimg" alt=""></div>
+                </div>
+            </div>
+
+            <div class="colorSelectArea chooseColor row w-100 ">
+                <div class="col-6 justify-content-center text-center">
+                    <h4>Primary</h4>
+                    <input type="color" id="logoFirstColor" value="#000000">
+                </div>
+                <div class="col-6 justify-content-center text-center">
+                    <h4>Secondary</h4>
+                    <input type="color" id="logoSecondaryColor" value="#ffffff">
+                </div>
+            </div>
+
+            <div class=" reset-logo d-flex justify-content-end">
+                <div class="reset d-flex justify-content-center align-items-center">
+                    <button id="resetlogo" class="d-flex justify-content-center align-items-center">
+                        <span id="resetlogoid"><span>Reset</span><i class="fas fa-trash-alt ml-2"
+                                style="font-size: 25px;"></i></span>
+                    </button>
+                </div>
+                <div class="saveall d-flex justify-content-center align-items-center">
+                    <button id="saveid" class="d-flex justify-content-center align-items-center"><span>Save Changes <i class="fas fa-save " style="font-size: 25px;"></i><span>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="main row w-100">
+
+
+
+        <div class="cookie-main col-4  ">
+            <button class="resetGame btn btn-dark">Reset Game</button>
+            <button class="settingsGame btn btn-dark">Settings</button>
+            <button class="startGame btn btn-dark">Start Game</button>
+
+            <div class="cookie d-inline-block">
+
+            </div>
+
+            <div class="cookiepoin d-flex justify-content-center align-items-end">
+                <p class="cookiePoint">0</p><span><strong>$</strong></span>
+            </div>
+
+        </div>
+
+
+        <div class="containerCol8 col-8 d-flex  flex-column  p-0 pb-3 ">
+
+
+
+
+            <div class="tabsarea ml-3 mr-3 mt-3 " style="position: relative;">
+
+                <ul id="changeTabsUl" class="m-0 " style="position: relative; top:8px;">
+                    <li onclick="changeTabs('menu1')" class="item1"><i class="fas fa-users"></i></li>
+                    <li onclick="changeTabs('menu2')" class="item2"><i class="fas fa-shopping-basket"></i></li>
+                    <li onclick="changeTabs('menu3')" class="item3"><i class="fas fa-angle-double-up"></i></li>
+                </ul>
+
+                <div class="tabsMain m-0">
+
+                    <div id="menu1" class=" menuitem ">
+                        <div class="row h-100">
+                            <div class="col-8   p-0 footballerAreaContainer">
+                                <div class="div">
+                                    <span>name</span>
+                                    <span>power</span>
+                                    <span>price</span>
+                                </div>
+                                <div class="footballerArea">
+                                    <img class="footballerImg" src="" alt="" id="asd">
+                                    <span class="footballerName">Metehan Kasap</span>
+                                    <span class="footballerPower">78</span>
+                                    <span class="footballerPrice"></span>
+                                </div>
+                                <div class="footballerArea">
+                                    <img class="footballerImg" src="" alt="" id="asd">
+                                    <span class="footballerName">Metehan Kasap</span>
+                                    <span class="footballerPower">78</span>
+                                    <span class="footballerPrice"></span>
+                                </div>
+                                <div class="footballerArea">
+                                    <img class="footballerImg" src="" alt="" id="asd">
+                                    <span class="footballerName">Metehan Kasap</span>
+                                    <span class="footballerPower">78</span>
+                                    <span class="footballerPrice"></span>
+                                </div>
+                                <div class="footballerArea">
+                                    <img class="footballerImg" src="" alt="" id="asd">
+                                    <span class="footballerName">Metehan Kasap</span>
+                                    <span class="footballerPower">78</span>
+                                    <span class="footballerPrice"></span>
+                                </div>
+                                <div class="footballerArea">
+                                    <img class="footballerImg" src="" alt="" id="asd">
+                                    <span class="footballerName">Metehan Kasap</span>
+                                    <span class="footballerPower">78</span>
+                                    <span class="footballerPrice"></span>
+                                </div>
+                                <div class="footballerArea">
+                                    <img class="footballerImg" src="" alt="" id="asd">
+                                    <span class="footballerName">Metehan Kasap</span>
+                                    <span class="footballerPower">78</span>
+                                    <span class="footballerPrice"></span>
+                                </div>
+
+                            </div>
+
+                            <div class="col-4 teamInfoContainer p-4">
+                                <div class="teamInfo"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="menu2" class="d-none menuitem ">222Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, dignissimos!
+                    </div>
+                    <div id="menu3" class="d-none menuitem ">333Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, perferendis.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <script src="RandomCharacterGenerator/randomHero.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1015 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+button:focus {
+    outline: none;
+    border: none;
+}
+
+.cookie {
+    background-image: url('assets/498-4981049_soccer-or-football-vector-football-ball-png-clipart.png');
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    transition: .1s all;
+    -webkit-animation: rotation 5s infinite linear;
+    -moz-animation: rotation 3s infinite linear;
+    -o-animation: rotation 5s infinite linear;
+    width: 250px;
+    height: 250px;
+    animation: rotation 5s infinite linear;
+    position: absolute;
+    top: 15rem;
+}
+
+
+/*TURNİNG İMAGE*/
+
+@-webkit-keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(359deg);
+    }
+}
+
+@-moz-keyframes rotation {
+    from {
+        -moz-transform: rotate(0deg);
+    }
+    to {
+        -moz-transform: rotate(359deg);
+    }
+}
+
+@-o-keyframes rotation {
+    from {
+        -o-transform: rotate(0deg);
+    }
+    to {
+        -o-transform: rotate(359deg);
+    }
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    height: 100vh;
+    font-size: 1rem;
+    background-image: url('assets/mainbG.jpg');
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.active {
+    display: inline-block;
+}
+
+.d-none {
+    display: none;
+}
+
+.cookie-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.cookiepoin {
+    font-size: 50px;
+    position: absolute;
+    top: 32rem;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.resetGame {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-family: 'Quicksand', sans-serif;
+    border: 1px solid #fff;
+    font-style: oblique;
+}
+
+.startGame {
+    position: absolute;
+    top: 1rem;
+    left: 15rem;
+    font-family: 'Quicksand', sans-serif;
+    border: 1px solid #fff;
+    font-style: oblique;
+}
+
+.settingsGame {
+    position: absolute;
+    top: 1rem;
+    left: 9rem;
+    font-family: 'Quicksand', sans-serif;
+    border: 1px solid #fff;
+    font-style: oblique;
+}
+
+.resetDialog {
+    position: absolute;
+    top: 50%;
+    color: #333;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, .95);
+    padding: 2rem 2rem;
+    z-index: 15;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    border: 6px solid #222;
+    border-radius: 1.5rem;
+    display: none;
+    width: 350px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+}
+
+.fa-exclamation-triangle {
+    font-size: 7rem;
+    margin-bottom: 3rem;
+    color: #449F62;
+}
+
+.btnMain {
+    margin-top: 1rem;
+}
+
+.btnMain button {
+    margin: .5rem;
+}
+
+.hayırBtn {
+    position: absolute;
+    top: .5rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 1.4rem;
+    margin: 0;
+    padding: 0;
+    color: #222;
+    transition: .5s all;
+}
+
+.hayırBtn:focus {
+    border: none;
+    outline: none;
+}
+
+.hayırBtn:hover {
+    color: #555;
+}
+
+.evetBtn {
+    background-color: #449F62;
+    padding: .5rem 2.5rem;
+    border-radius: 3rem;
+    border: 3px solid #222;
+    color: white;
+    text-shadow: 4px 2px #333;
+    font-weight: 100;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    font-size: .8rem;
+    font-family: 'Press Start 2P', cursive;
+    transition: .2s all ease-in-out;
+}
+
+.evetBtn:hover {
+    border: 3px solid #449f62;
+    letter-spacing: .2rem;
+}
+
+.evetBtn:focus {
+    border: none;
+    outline: none;
+}
+
+.resetDialog p {
+    margin: 0;
+}
+
+.resetDialog span {
+    text-align: left;
+    font-size: .8rem;
+    color: rgba(255, 0, 0, .95);
+}
+
+.fa-shoe-prints {
+    margin-left: .3rem;
+}
+
+.cookiepoin p {
+    margin: 0;
+}
+
+.cookiepoin span {
+    font-size: 1.5rem;
+    margin-bottom: .7rem;
+}
+
+
+/*tabs main*/
+
+#changeTabsUl {
+    display: flex;
+    justify-content: baseline;
+}
+
+#changeTabsUl li {
+    background-color: rgba(255, 255, 255, .2);
+    padding: 1rem 4rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border-bottom: 8px solid rgba(255, 255, 255, .2);
+}
+
+#changeTabsUl li:first-child {
+    background-color: rgba(255, 255, 255, .2);
+    border: 8px solid #fff;
+    border-bottom: none;
+}
+
+.menuitem {
+    height: 100%;
+    padding: 2rem;
+}
+
+.tabsMain {
+    height: 720px;
+    border: 8px solid white;
+    background-color: rgba(255, 255, 255, .2);
+}
+
+#changeTabsUl li i {
+    font-size: 2.2rem;
+    color: rgb(36, 102, 57);
+    text-shadow: 2px 2px white;
+}
+
+
+/*UserProfileArea*/
+
+.tabsarea {
+    margin-top: 50px;
+    height: 100%;
+}
+
+
+/*teamchooser*/
+
+.secondchoose {
+    background-color: rgba(58, 163, 104, .5);
+    height: 80%;
+    width: 90%;
+    border: 6px solid black;
+    border-radius: 20px;
+}
+
+.secondchoose h4 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    color: white;
+    text-shadow: 2px 2px 5px #333;
+}
+
+.teamChooser {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150vh;
+    height: 80vh;
+    z-index: 1;
+    border-radius: 30px;
+    border: 6px solid black;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-image: url('assets/chooseArea.jpg');
+    background-position: center;
+    background-size: cover;
+    display: none;
+}
+
+.bodyforma {
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choosingMain {
+    height: 100%;
+}
+
+
+/*body {
+    justify-content: center;
+    display: flex;
+}*/
+
+.uniformarea {
+    position: relative;
+}
+
+.kol2 {
+    position: absolute;
+    top: 37.5px;
+    left: -93px;
+    width: 150px;
+    height: 90px;
+    border: 6px solid black;
+    transform: rotate(-40deg);
+    z-index: 1;
+    border-radius: 7px;
+    box-shadow: -3px -3px 5px 0px rgba(0, 0, 0, .2);
+    background-color: #fff;
+}
+
+.kol1 {
+    position: absolute;
+    top: 37.5px;
+    right: -93px;
+    width: 150px;
+    height: 90px;
+    border: 6px solid black;
+    transform: rotate(40deg);
+    z-index: 1;
+    border-radius: 7px;
+    box-shadow: -3px -3px 5px 0px rgba(0, 0, 0, .2);
+    background-color: #fff;
+}
+
+.kol {
+    background-color: black;
+}
+
+.body {
+    width: 250px;
+    height: 400px;
+    border: 6px solid black;
+    background-color: white;
+    border-radius: 20px;
+    /*box-shadow: 2px 2px 8px 2px #333;*/
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+.yaka {
+    height: 45px;
+    width: 110px;
+    /* as the half of the width */
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border: 8px solid black;
+    border-bottom: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: white;
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    z-index: 5;
+    transform: translate(-50%) rotate(180deg);
+}
+
+
+/*ÇİZGİLİ*/
+
+.kolvr {
+    width: 130px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    height: 25px;
+    z-index: 5;
+}
+
+.kolvrvr {
+    position: absolute;
+    top: 0;
+    left: 0px;
+}
+
+
+/*renkmain*/
+
+.cizgilikol {
+    background-color: black;
+}
+
+.cizgilikolvr {
+    background-color: white;
+}
+
+.cizgilicizgi {
+    border-left: 25px solid black;
+    height: 100%;
+}
+
+.cizgilibody {
+    width: 250px;
+    height: 400px;
+    border: 6px solid black;
+    background-color: white;
+    z-index: 4;
+    border-radius: 20px;
+    /*box-shadow: 2px 2px 8px 2px #333;*/
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+    position: relative;
+}
+
+
+/*SIKCİZGİLİ*/
+
+.sıkcizgilibody {
+    width: 250px;
+    height: 400px;
+    border: 6px solid black;
+    background-color: rgb(0, 0, 191);
+    z-index: 5;
+    border-radius: 20px;
+    /*box-shadow: 2px 2px 8px 2px #333;*/
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+    position: relative;
+}
+
+.sıkcizgilikol2 {
+    background-color: #6a0101;
+    position: absolute;
+    top: 37.5px;
+    left: -93px;
+    width: 150px;
+    height: 90px;
+    border: 6px solid black;
+    transform: rotate(-40deg);
+    z-index: 2;
+    border-radius: 7px;
+    box-shadow: -3px -3px 5px 0px rgba(0, 0, 0, .2);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.sıkcizgilikol1 {
+    background-color: #6a0101;
+    position: absolute;
+    top: 37.5px;
+    right: -93px;
+    width: 150px;
+    height: 90px;
+    border: 6px solid black;
+    transform: rotate(40deg);
+    z-index: 2;
+    border-radius: 7px;
+    box-shadow: -3px -3px 5px 0px rgba(0, 0, 0, .2);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.sıkcizgilibody .vr {
+    border-left: 12px solid grey;
+    height: 100%;
+}
+
+.sıkcizgilikol1 .kolvr {
+    width: 100%;
+    height: 8px;
+    background-color: red;
+    z-index: 5;
+}
+
+.sıkcizgilikol2 .kolvr {
+    width: 100%;
+    height: 8px;
+    background-color: red;
+    z-index: 5;
+}
+
+
+/*tekcizgili desen*/
+
+.tekcizgibody {
+    width: 250px;
+    height: 400px;
+    border: 6px solid black;
+    background-color: #fff;
+    z-index: 5;
+    border-radius: 20px;
+    /*box-shadow: 2px 2px 8px 2px #333;*/
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: relative;
+}
+
+.tekCizgi {
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    margin-left: -1px;
+    height: 70px;
+    border-top: 6px solid black;
+    border-bottom: 6px solid black;
+    background-color: black;
+}
+
+.tekcizgikol {
+    background-color: #fff;
+}
+
+
+/***********************/
+
+.formapaint {
+    position: relative;
+}
+
+.formapaint button {
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 5px;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    margin: 10px;
+    transition: .5s all ease-in-out;
+}
+
+#duzbutton {
+    position: relative;
+    border: 2px solid white;
+}
+
+#cizgilibutton {
+    position: relative;
+    border: 2px solid white;
+}
+
+#sikcizgilibutton {
+    position: relative;
+    border: 2px solid white;
+}
+
+#tekcizgilibutton {
+    position: relative;
+    border: 2px solid white;
+}
+
+.formapaint button:focus {
+    border: none;
+    outline: none;
+}
+
+.formapaint button img {
+    width: 110%;
+}
+
+
+/**************************/
+
+.hover14 button::before {
+    position: absolute;
+    top: 0;
+    left: -75%;
+    z-index: 2;
+    display: block;
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+    -webkit-transform: skewX(-25deg);
+    transform: skewX(-25deg);
+}
+
+.hover14 button:hover::before {
+    -webkit-animation: shine .75s;
+    animation: shine .75s;
+}
+
+@-webkit-keyframes shine {
+    100% {
+        left: 125%;
+    }
+}
+
+@keyframes shine {
+    100% {
+        left: 125%;
+    }
+}
+
+
+/*********************/
+
+input[type="color"] {
+    -webkit-appearance: none;
+    border: 3px solid white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+input[type="color"]:focus {
+    outline: none;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+    border-radius: 50%;
+}
+
+input[type="color"]::-webkit-color-swatch {
+    border: none;
+    border-radius: 50%;
+}
+
+.colorpicker {
+    outline: none;
+}
+
+
+/*************************/
+
+.reset-logo {
+    width: 100%;
+    padding-right: 1rem;
+}
+
+.reset-logo button {
+    margin: .5rem;
+    padding: .5rem;
+    border: none;
+}
+
+.reset-logo button:focus {
+    outline: none;
+}
+
+.reset-logo span {
+    background-color: transparent;
+    font-size: 25px;
+    color: white;
+    text-shadow: 2px 2px 5px #333;
+    transition: .6s all ease-in;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    color: white;
+    text-shadow: 2px 2px 5px #333;
+    letter-spacing: 0rem;
+}
+
+
+/*****trash**************/
+
+.reset button {
+    background-color: transparent;
+    font-size: 25px;
+    color: white;
+    text-shadow: 2px 2px 5px #333;
+    transition: .6s all ease-in;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    color: white;
+    text-shadow: 2px 2px 5px #333;
+    letter-spacing: 0rem;
+}
+
+.logoSec button {
+    transition: .6s all ease-in;
+    background-color: transparent;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    color: white;
+    text-shadow: 2px 2px 5px #333;
+    letter-spacing: 0rem;
+}
+
+.reset button:hover,
+.logoSec button:hover {
+    transform: rotate(1turn);
+}
+
+
+/*LOGO EFFECTİVE AREA*/
+
+#teamlogoChooser {
+    display: none;
+}
+
+.colorSelectArea h4 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    color: white;
+    text-shadow: 2px 2px 5px #333;
+}
+
+
+/*******LOGO MAİN AREA************/
+
+.circle {
+    width: 400px;
+    height: 400px;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 6px solid black;
+}
+
+.circleinner {
+    width: 260px;
+    height: 260px;
+    border: 6px solid black;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gslogoinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoimg img {
+    width: 90%;
+}
+
+
+/****SECONDLOGO*******/
+
+.gslogo {
+    width: 300px;
+    height: 480px;
+    background-color: black;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 6px solid black;
+}
+
+.gslogoinner {
+    width: 200px;
+    height: 360px;
+    background-color: white;
+    border-radius: 100%;
+    border: 6px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/***THİRDLOGO*****/
+
+.concaveLogo {
+    width: 300px;
+    height: 360px;
+    border: 6px solid white;
+    border-radius: 0% 0% 50% 50% / 24% 24% 76% 76%;
+    background-color: black;
+    position: relative;
+}
+
+.logoconcavee {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-45%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoconcavee img {
+    width: 100%;
+}
+
+
+/***********FOURTH LOGO******************/
+
+.lstLogo {
+    transform: rotate(45deg);
+    width: 320px;
+    height: 320px;
+    border-radius: 0px 0px 0px 0px;
+    -webkit-border-radius: 0px 0px 0px 0px;
+    -moz-border-radius: 0px 0px 0px 0px;
+    background-color: black;
+    border: 18px groove white;
+    display: flex;
+    margin: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.logorotate {
+    transform: rotate(315deg);
+}
+
+.logorotate img {
+    width: 80%;
+}
+
+.amblemSelectArea img {
+    width: 100px;
+    cursor: pointer;
+}
+
+.logoimgminified {
+    width: 100px;
+}
+
+.logochoosingarea h4 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    color: white;
+    text-shadow: 2px 2px 5px #333;
+    margin-bottom: 2rem;
+}
+
+#teamlogoChooser {
+    display: none;
+}
+
+#saveid span:hover {
+    transform: rotate(1turn);
+}
+
+
+/*FOOTBALLARAREA*/
+
+.footballerAreaContainer {
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 650px;
+    background-color: rgba(255, 255, 255, .2);
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+
+.footballerAreaContainer .div {
+    text-align: right;
+    margin-top: 2rem;
+    padding: 1rem 0;
+    background-color: #333;
+    border-top: 8px solid white;
+    border-bottom: 8px solid white;
+}
+
+.footballerAreaContainer .div span {
+    color: white;
+    font-weight: 600;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding-left: 4.5rem;
+    letter-spacing: .2rem;
+}
+
+.footballerAreaContainer .div span:first-child {
+    padding-right: 2.5rem;
+}
+
+.footballerAreaContainer .div span:last-child {
+    padding-right: 3rem;
+}
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: #333;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #444;
+}
+
+.footballerArea {
+    border-bottom: 2px solid white;
+    width: 100%;
+    padding: .5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+}
+
+.footballerName,
+.footballerPower,
+.footballerPrice {
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: 'Fjalla One', sans-serif;
+    color: #333;
+}
+
+.footballerArea img {
+    width: 120px;
+}
+
+
+/********TEAM İNFO CONTAİNER**************/
+
+.teamInfoContainer {
+    background-color: rgba(255, 255, 255, .2);
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    height: 650px;
+}
+
+.teamInfo {
+    width: 100%;
+    height: 100%;
+    border: 8px solid white;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}

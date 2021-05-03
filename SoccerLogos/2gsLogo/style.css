@@ -1,0 +1,27 @@
+.gslogo {
+    width: 150px;
+    height: 240px;
+    background-color: red;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 6px solid black;
+}
+
+.gslogoinner {
+    width: 100px;
+    height: 180px;
+    background-color: blue;
+    border-radius: 100%;
+    border: 6px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

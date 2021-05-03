@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.lstLogo {
+    transform: rotate(45deg);
+    width: 140px;
+    height: 140px;
+    border-radius: 0px 0px 0px 0px;
+    -webkit-border-radius: 0px 0px 0px 0px;
+    -moz-border-radius: 0px 0px 0px 0px;
+    background-color: grey;
+    border: 18px groove red;
+    display: flex;
+    margin: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoimg {
+    transform: rotate(300deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoimg img {
+    width: 90px;
+    height: 90px;
+    margin: 0;
+}
